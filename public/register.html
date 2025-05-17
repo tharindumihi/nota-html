@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <a href="../index.html"><img src="../assets/logo.svg" width="200" alt="Logo"></a>
+    <h1>Join Nota</h1>
+    <p>Already have an account? <a href="./login.html">Login Here</a></p>
+    <hr>
+
+    <form action="/api/v1/register" method="post">
+
+        <label for="first-name">First Name</label>
+        <input type="text" name="firstname" id="first-name" minlength="2" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" name="lastname" id="last-name" minlength="2" required>
+        
+        <br> <!-- Do not use -->
+        
+        <label for="user-email">Email</label>
+        <input type="email" name="email" id="user-email" required>
+        
+        <br> <!-- Do not use -->
+
+        <label for="user-name">Username</label>
+        <input type="text" name="username" id="user-name" minlength="5" required>
+        
+        <br> <!-- Do not use -->
+        
+        <label for="user-password">Password</label>
+        <input type="password" name="password" id="user-password" placeholder="min 8 charecters required" minlength="8" required>
+        
+        <br> <!-- Do not use -->
+        
+        <input type="checkbox" name="agree" id="joining-agree" required>
+        <label for="joining-agree">I am agree to the <a href="./terms.html">Terms</a> and <a href="./privacy.html">Privacy Policy</a>.</label>
+        
+        <br> <!-- Do not use -->
+
+        <button type="submit">Join</button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Journal</title>
+
+    <h1>Search Journal</h1>
+    <hr>
+
+    <form action="/api/v1/journals" method="get">
+        <label for="search-bar">Search Bar</label>
+        <input type="text" name="search" id="search-bar" placeholder="search journals">
+        
+        <label for="journal-category">Journal Category</label>
+        <select name="category" id="journal-category">
+            <option value="goal">Goal</option>
+            <option value="habbit">Habbit</option>
+            <option value="idea">Idea</option>
+            <option value="note">Note</option>
+            <option value="task">Task</option>
+        </select>
+
+        <button type="submit">Search</button>
+    </form>
+</head>
+<body>
+    
+</body>
+</html>
